@@ -1,0 +1,31 @@
+{
+  "name": "oda_agent_handover",
+  "version": "1.0.0",
+  "description": "Handing over an ODA chat session with a Third Party AgentChat System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:dev": "nodemon --inspect src/server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "mock-server": "node mockServer/mockServer.js",
+    "mock-server:dev": "nodemon mockServer/mockServer.js",
+    "test": "nyc jasmine"
+  },
+  "author": "Oracle",
+  "license": "UPL-1.0",
+  "dependencies": {
+    "@oracle/bots-node-sdk": "^2.5.5",
+    "axios": "^0.24.0",
+    "express": "^4.17.1",
+    "jsonschema": "1.2.6",
+    "log4js": "^6.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "jasmine": "^3.10.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "nodemon": "^2.0.15",
+    "nyc": "^15.1.0"
+  }
+}
